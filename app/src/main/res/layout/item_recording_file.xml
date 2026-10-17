@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_rounded_card"
+    android:padding="14dp"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/img_type_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="Type"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VID_20250520.mp4"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:ellipsize="middle"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/tv_file_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14.2 MB • May 20, 2025"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_export_file"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="Export"
+        android:textSize="11sp"
+        android:textColor="@color/primary_coral"
+        android:background="@android:color/transparent"
+        android:layout_marginEnd="4dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_delete_file"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_menu_delete"
+        android:contentDescription="Delete Recording"/>
+
+</LinearLayout>

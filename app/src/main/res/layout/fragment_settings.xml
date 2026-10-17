@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GENERAL"
+            android:textColor="@color/text_muted"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Permissions & Status Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_rounded_card"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/btn_battery_optimization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Battery Optimization Guidance"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+
+            <TextView
+                android:id="@+id/btn_permissions_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Permissions Status"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RECORDING"
+            android:textColor="@color/text_muted"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Recording Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_rounded_card"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/btn_recording_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recording Settings"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+
+            <TextView
+                android:id="@+id/btn_recording_library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temporary Recording Library"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATA &amp; SUPPORT"
+            android:textColor="@color/text_muted"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Data Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_rounded_card"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/btn_backup_restore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Backup &amp; Restore"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+
+            <TextView
+                android:id="@+id/btn_diagnostics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Diagnostics and Logs"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color"/>
+
+            <TextView
+                android:id="@+id/btn_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About zzzznotch"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

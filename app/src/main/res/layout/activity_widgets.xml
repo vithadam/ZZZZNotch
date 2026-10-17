@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Widget Panel Controls"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable or disable widgets inside the expanded notch panel"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Card Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_rounded_card"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Media Controls Widget"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:checked="true"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volume Slider"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:checked="true"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brightness Slider"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:checked="true"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Countdown Timer Widget"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:checked="true"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_stopwatch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stopwatch Widget"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:checked="true"
+                android:layout_marginBottom="12dp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_quick_tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quick Tools Grid (Flashlight, Notes, QR, Settings)"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:checked="true"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save_widgets"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_outlined_button_coral"
+            android:text="Save Widget Configuration"/>
+
+    </LinearLayout>
+</ScrollView>

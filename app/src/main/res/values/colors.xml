@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- New Design System Colors -->
+    <color name="app_background">#F3F4F8</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="primary_coral">#F4515B</color>
+    <color name="pale_coral">#FDEBEC</color>
+    <color name="text_primary">#20212D</color>
+    <color name="text_secondary">#92939B</color>
+    <color name="text_muted">#98A4B8</color>
+    <color name="divider_color">#E9E9ED</color>
+
+    <!-- Legacy / Mapped Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="coral_red">#F4515B</color>
+    <color name="light_cool_grey">#F3F4F8</color>
+    <color name="charcoal_primary">#20212D</color>
+    <color name="muted_grey_secondary">#92939B</color>
+    <color name="white_card">#FFFFFF</color>
+</resources>

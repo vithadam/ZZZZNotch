@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121214"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notch Appearance &amp; Photo/Logo"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom size, position, shape, transparency &amp; custom photo overlay"
+            android:textColor="#8E8E93"
+            android:textSize="13sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Live Preview Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:background="#000000"
+            android:gravity="top|center_horizontal"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIVE PREVIEW"
+                android:textColor="#555555"
+                android:textSize="10sp"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="8dp"/>
+
+            <FrameLayout
+                android:id="@+id/preview_notch_container"
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_panel_card">
+
+                <ImageView
+                    android:id="@+id/img_preview_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Position & Size Controls -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size &amp; Position"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_width_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Width: 120 dp"
+                android:textColor="#CCCCCC"/>
+
+            <SeekBar
+                android:id="@+id/seek_width"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="300"
+                android:progress="120"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_height_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height: 36 dp"
+                android:textColor="#CCCCCC"/>
+
+            <SeekBar
+                android:id="@+id/seek_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="36"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_offset_y_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vertical Offset Y: 0 dp"
+                android:textColor="#CCCCCC"/>
+
+            <SeekBar
+                android:id="@+id/seek_offset_y"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="150"
+                android:progress="0"/>
+        </LinearLayout>
+
+        <!-- Custom Photo / Logo Personalization -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom Photo / Logo Personalization"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_pick_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Choose Photo or Logo"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/btn_clear_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Remove Photo"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo Overlay Mode"
+                android:textColor="#CCCCCC"
+                android:textSize="12sp"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinner_photo_mode"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#2A2A30"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tv_logo_padding_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logo Padding (Size): 2 dp"
+                android:textColor="#CCCCCC"/>
+
+            <SeekBar
+                android:id="@+id/seek_logo_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="20"
+                android:progress="2"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save_appearance"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Save Appearance Settings"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
