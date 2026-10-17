@@ -17,6 +17,7 @@ import android.view.Gravity;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import androidx.core.app.NotificationCompat;
 
@@ -85,6 +86,13 @@ public class VideoRecordingService extends Service implements SurfaceHolder.Call
     private void setupHiddenSurface() {
         if (isRecording) return;
         try {
+            if (!PermissionUtils.hasOverlayPermission(this)) {
+                Logger.e("Overlay permission is required for background video recording on this OS version.");
+                Toast.makeText(this, "Overlay permission required for Video Recording", Toast.LENGTH_LONG).show();
+                stopSelf();
+                return;
+            }
+
             windowManager = (WindowManager) getSystemService(WINDOW_SERVICE);
             surfaceView = new SurfaceView(this);
             WindowManager.LayoutParams params = new WindowManager.LayoutParams(

@@ -177,7 +177,15 @@ public class AppPreferences {
         if (json != null) {
             try {
                 NotchAppearance appearance = gson.fromJson(json, NotchAppearance.class);
-                if (appearance != null) return appearance;
+                if (appearance != null) {
+                    if (appearance.getWidthDp() == 0) appearance.setWidthDp(120);
+                    if (appearance.getHeightDp() == 0) appearance.setHeightDp(36);
+                    if (appearance.getBackgroundColor() == 0) appearance.setBackgroundColor(0xFF000000);
+                    if (appearance.getShapeType() == null) appearance.setShapeType(NotchAppearance.ShapeType.PILL);
+                    if (appearance.getPhotoOverlayMode() == null) appearance.setPhotoOverlayMode(NotchAppearance.PhotoOverlayMode.DISABLED);
+                    if (appearance.getAlpha() == 0.0f) appearance.setAlpha(1.0f);
+                    return appearance;
+                }
             } catch (Exception ignored) {
             }
         }

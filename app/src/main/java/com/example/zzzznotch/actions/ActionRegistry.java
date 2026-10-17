@@ -32,6 +32,10 @@ public class ActionRegistry {
             case GLOBAL_QUICK_SETTINGS:
             case GLOBAL_LOCK_SCREEN:
             case TAKE_SCREENSHOT:
+            case SIMULATE_SWIPE_UP:
+            case SIMULATE_SWIPE_DOWN:
+            case SIMULATE_SWIPE_LEFT:
+            case SIMULATE_SWIPE_RIGHT:
                 return "Accessibility Service";
 
             case BRIGHTNESS_UP:
@@ -59,6 +63,10 @@ public class ActionRegistry {
             case GLOBAL_QUICK_SETTINGS:
             case GLOBAL_LOCK_SCREEN:
             case TAKE_SCREENSHOT:
+            case SIMULATE_SWIPE_UP:
+            case SIMULATE_SWIPE_DOWN:
+            case SIMULATE_SWIPE_LEFT:
+            case SIMULATE_SWIPE_RIGHT:
                 return PermissionUtils.isAccessibilityServiceEnabled(context);
 
             case BRIGHTNESS_UP:

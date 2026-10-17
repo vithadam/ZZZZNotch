@@ -110,6 +110,10 @@ public class NotchOverlayService extends Service implements GestureListener {
             }
         }
 
+        if (overlayView == null && PermissionUtils.hasOverlayPermission(this)) {
+            setupOverlay();
+        }
+
         refreshOverlayAppearance();
         return START_STICKY;
     }
