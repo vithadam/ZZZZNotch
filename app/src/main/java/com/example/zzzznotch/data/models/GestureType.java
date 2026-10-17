@@ -10,11 +10,7 @@ public enum GestureType {
     SWIPE_UP("Swipe Up", "Triggered by swiping upward"),
     SWIPE_DOWN("Swipe Down", "Triggered by swiping downward"),
     SWIPE_LEFT("Swipe Left", "Triggered by swiping leftward"),
-    SWIPE_RIGHT("Swipe Right", "Triggered by swiping rightward"),
-    SWIPE_HOLD_UP("Swipe Up & Hold", "Swipe upward and hold position"),
-    SWIPE_HOLD_DOWN("Swipe Down & Hold", "Swipe downward and hold position"),
-    SWIPE_HOLD_LEFT("Swipe Left & Hold", "Swipe leftward and hold position"),
-    SWIPE_HOLD_RIGHT("Swipe Right & Hold", "Swipe rightward and hold position");
+    SWIPE_RIGHT("Swipe Right", "Triggered by swiping rightward");
 
     private final String displayName;
     private final String description;
